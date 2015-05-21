@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>前端html+css入門</title>
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="Bookmark" href="images/favicon.ico" type="image/x-icon">
+		<meta name="description" content="前端html+css入門-詹淑貽">
+		<meta name="author" content="詹淑貽">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>HTML+CSS入門</h1>
+					<h3>PROACTIVE X 輔大資管</h3>
+					<p>
+						<small>Created by <a href="https://www.facebook.com/shuyioctave" target="_blank">ShuyiChan</a> / <a href="https://www.facebook.com/proactive.egroup" target="_blank">ProActive前端分享社群</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<img data-src="images/day0.jpg" alt="自我修練">
+					</section>
+					<section>
+						<h2>PROJECT 1: <br>BUILD A PERSONAL WEBSITE</h2>
+						<a href="https://dash.generalassemb.ly/shuyichan/build-your-own-personal-website" target="_blank">
+							<img data-src="images/personal1.png" width="1346" alt="personalwebsite">
+						</a>
+					</section>
+					<section>
+						<h2>HTML? CSS?</h2>
+						<ul>
+							<li>HTML是網頁的骨架</li>
+							<li>CSS 是網頁的衣服</li>
+						</ul>
+						<p>// CSS為赤裸裸的HTML網頁骨架穿上衣服</p>	
+					</section>
+					<section>
+						<h2>有穿衣服</h2>
+						<p>完整 HTML+CSS 網頁</p>
+						<img data-src="images/explain3.png" width="1287" alt="html基礎架構螢幕">
+					</section>	
+					<section>
+						<h2>脫掉衣服</h2>
+						<p>拿掉 CSS 的網頁，只有骨架內容</p>
+						<img data-src="images/explain2.png" width="1287" alt="html基礎架構螢幕">
+					</section>	
+					<section>
+						<h2>丟掉內容</h2>
+						<p>一切的基礎 HTML 文件架構</p>
+						<img data-src="images/explain1.png" width="1287" alt="html基礎架構螢幕">
+					</section>										
+				</section>
+
+				<section>
+					<section>
+						<h2>編輯器 Sublime Text 3</h2>
+					</section>
+					<section>
+						<img data-src="images/sublime.png" height="300" alt="sublime"><br>
+						<ul>
+							<li><a href="http://www.sublimetext.com/3">選作業環境下載安裝</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>安裝 Sublime package control<br></h2>
+						<img data-src="images/sublime2.png" height="400" alt="sublime"><br>
+						<ul>
+							<li><a href="https://packagecontrol.io/installation">複製安裝代碼</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>安裝package control步驟<br></h2>
+						<ol>
+							<li><a href="https://packagecontrol.io/installation">複製安裝代碼</a></li>
+							<li>按快速鍵Ctrl + `叫出console<br>
+								((或點選導覽列View > Show Console叫出console))
+							</li>
+							<li>輸入複製的代碼，按Enter</li>
+						</ol>
+						<p>
+							// <a href="http://www.proactive.tw/showCourse?id=55">看詳細安裝教學</a>
+						</p>
+					</section>
+					<section>
+						<h2>必裝擴充套件<br></h2>
+						<ul>
+							<li>Emmet</li>
+							<li>ConvertToUTF8</li>
+							<li>IME Support</li>
+							<li>CSS3</li>
+							<li>HTML5</li>
+							<li>HTMLAttriutes</li>
+							<li>AutoFileName</li>
+							<li>SideBarEnhancements</li>
+						</ul>
+						<p>// 到google大神，搜尋sublime 套件會有很多資訊~</p>
+					</section>
+					
+					<section>
+						<h2>Emmet<br></h2>
+						<p>簡寫打法幫你產生HTML或CSS加快開發速度</p>
+						<hr>
+						<ol>
+							<li>按下ctrl + shift + p 叫出 command palette<br>
+							(( 或點選導覽列Preferences > Package Control))
+							</li>
+							<li>輸入「 install Packages」按下enter<br>
+							((或輸入簡寫inst按下enter))
+							</li>
+							<li>再輸入「 emmet」，<br>選擇「 emmet」後按enter就可以安裝</li>
+							<li>完成安裝</li>
+						</ol>
+						<p>
+							// <a href="http://docs.emmet.io/cheat-sheet/">Emmet Documentation 加快開發吧</a>
+						</p>
+					</section>
+					<section>
+						<h2>IME Support<br></h2>
+						<p>不裝的話輸入中文會很痛苦</p>
+						<hr>
+						<ol>
+							<li>按下ctrl + shift + p 叫出 command palette<br>
+							(( 或點選導覽列Preferences > Package Control))
+							</li>
+							<li>輸入「 install Packages」按下enter<br>
+							((或輸入簡寫inst按下enter))
+							</li>
+							<li>再輸入「 IME Support」，<br>選擇「 IME Support」後按enter就可以安裝</li>
+							<li>完成安裝</li>
+						</ol>
+					</section>						
+				</section>
+				<section>
+					<section>
+						<h1>HTML 基礎</h1>
+					</section>
+		
+					<section>
+						<h2>HTML文本結構</h2>
+						<p></p>
+						
+						<img data-src="images/structure.jpg" alt="structure">
+						<ul>
+							<li>DOCTYPE版本宣告HTML5，因為HTML有多個不同版本</li>
+							<li>html標籤包住所有程式碼 在最外層</li>
+							<li>head裡面是 放網頁相關資訊，給搜尋引擎看</li>
+							<li>body裡面是 會顯示的網頁內容，給人看</li>
+						</ul>
+					</section>	
+					<section>
+						<h2>
+							標籤 (tags) 
+						</h2>
+						<img data-src="images/tags.jpg" alt="tags">
+						<ul>
+							<li>標籤通常是成對的（開始與結束）</li>
+							<li>用來告訴網頁內容的用途與意義</li>
+							<li>*單獨標籤： br , hr , img</li>
+						</ul>
+						<p>
+							// <a href="http://www.w3school.com.cn/tags/index.asp">到W3School學習所有標籤</a>
+						</p>
+						
+					</section>
+
+					<section>
+						<h2>
+							標籤 的 屬性
+						</h2>
+						<img data-src="images/tagsattri.jpg" alt="tags-attribute">
+						<ul>
+							<li>屬性：標籤中可以調整的選項</li>
+							<li>開始標記可以承載屬性，進一步說明標籤的內容</li>
+						</ul>
+						<p>
+							// <a href="http://www.w3school.com.cn/tags/tag_a.asp">到W3School學習所有標籤中的屬性</a>
+						</p>
+					</section>
+					<section>
+						<h2>
+							HTML5 語意化標籤 
+						</h2>
+						<p>//標籤：告訴網頁內容的用途與意義</p>
+						<ul>
+							<li> header : 一段文件、文章的標題</li>
+							<li> nav : 導航的意思 </li>
+							<li> aside : 主要內容之外的其他內容(側邊欄)</li>
+							<li> article : 為頁面中的一個區塊可多個，是獨立的內容 </li>
+							<li> section : 用於章節等段落的區分，必須有標題 </li>
+							<li> footer : HTML5頁面的下方，用以顯示相關資訊</li>
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h1>CSS 基礎</h1>
+					</section>
+					<section>
+						<h2>CSS三種穿衣法 </h2>
+						<ul>
+							<li>直接穿： 行內樣式
+								<pre><code>
+<h1 style="color:red;">Anna Dowlin</h1>
+								</code></pre>
+							</li>
+							<li>整頁穿： 頁面嵌入
+								<pre><code>
+<style>
+	h1 {
+		color:red;
+	}
+</style>
+								</code></pre>
+							</li>
+							<li>借來穿： css檔案引入
+								<pre><code>
+<link rel="stylesheet" href="style.css">
+								</code></pre>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>檔案路徑</h2>
+						<ul>
+							<li>絕對路徑: 完整網址連結，http://...</li>
+							<li>相對路徑: 相對於目前撰寫的檔案所在位置
+								<ul>
+									<li>同一層（相同目錄下）就直接寫檔案名稱
+									<pre><code>
+	<img data-src="personal1.png" alt="寫圖片描述">
+									</code></pre>
+									</li>
+									<li>在下一層資料夾，就要寫資料夾名稱斜線再寫檔名
+									<pre><code>
+	<img data-src="images/personal1.png" alt="寫圖片描述">
+									</code></pre>
+									</li>
+									<li>如果是在上一層的目錄中則要加上../
+									<pre><code>
+	<img data-src="../personal1.png" alt="寫圖片描述">
+									</code></pre>
+									</li>
+								</ul>								
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS 如何寫</h2>
+						<img data-src="images/property.jpg" alt="css解說">
+					</section>
+
+					<section>
+						<h2>CSS 排整齊</h2>
+						<img data-src="images/place.jpg" alt="css解說">
+					</section>
+					<section>
+						<h2>CSS 選擇器</h2>
+						<ul>
+							<li>標籤</li>
+							<li>屬性選擇器</li>
+						</ul>
+						<pre><code>
+	
+		h1 {...}
+		input[type="email"] {...}
+	
+						</code></pre>							
+
+					</section>					
+					<section>
+						<h2>Class & ID 選擇器</h2>
+
+						<ul>
+							<li>Class選取器使用"."---可共用 </li>
+							<li>ID選取器使用"#" ---是唯一</li>
+						</ul>
+						<p>CSS</p>
+						<pre><code>
+	.classname{...}
+	#idname{...}
+						</code></pre>						
+						<p>HTML</p>
+						<pre><code>
+	<h1 class="classname">...</h1>
+	<p class="classname">...</p>
+	<p id="idname">...</p>
+						</code></pre>	
+						<p>//選擇器小遊戲: <a href="http://flukeout.github.io">CSS Diner</a></p>					
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>實作前置</h1>
+					</section>
+					<section>
+						<h1>畫出想法</h1>
+						<img data-src="images/wireframe0.jpg" alt="wireframe">	
+					</section>
+					<section>
+						<h1>標示HTML架構</h1>
+						<img data-src="images/wireframe.jpg" alt="wireframe">	
+					</section>	
+					<section>
+						<h1>搭建HTML骨架</h1>
+						<p>開啟03try.html檔案</p>
+						<img data-src="images/practice-structure.png" alt="wireframe">
+					</section>	
+					<section>
+						<h1>穿上CSS</h1>
+						<p>開啟04complete.html檔案</p>
+						<img data-src="images/practice.png" height="400" alt="completeWebsite">	
+					</section>		
+					<section>
+						<h2>CSS Normalize</h2>
+						<ul>
+							<li>保留原本預設 HTML 標籤的樣式</li>
+							<li>針對不同瀏覽器與各版本間不相容的標籤進行些微調整，呈現一致</li>
+						</ul>
+					</section>
+				</section>
+				<section>				
+					<section>
+						<h1>CSS觀念實作練習</h1>
+					</section>
+					<section>
+						<h2>Box Model盒子模型</h2>
+						<img data-src="images/boxmodel.jpg" alt="Box Model盒子模型">	
+
+						<ul>
+							<li>物件大小 ＝ content+padding+border</li>
+							<li>與隔壁的距離 ＝ margin</li>
+						</ul>
+						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/box-model.html">關於 Box Model</a> </p>
+					</section>	
+					<section>
+						<h2>display</h2>
+						<p>每個 HTML 元素都有一個預設的 display 值</p>
+						<ul>
+							<li>block「區塊元素」佔位哥， 舉例：p 、 form</li>
+							<li>inline「行內元素」謙虛哥，舉例：span、a</li>
+							<li>inline-block：外面是 inline ，裡面是 block</li>
+							<li>none 隱藏不佔位</li>
+						</ul>
+
+					</section>
+					<section>
+						<h2>float</h2>
+						<ul>
+							<li>實作圖繞文效果</li>
+							<li>使用clear清除浮動</li>
+							<li>float排版</li>
+						</ul>
+						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/float.html">關於 float 屬性</a> </p>
+					</section>
+					<section>
+						<h2>position</h2>
+						<ul>
+							<li>static</li>
+							<li>relative</li>
+							<li>fixed</li>
+							<li>absolute</li>
+						</ul>
+						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/position.html">position</a> </p>
+					</section>
+									
+				</section>						
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
