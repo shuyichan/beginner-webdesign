@@ -194,17 +194,6 @@
 						</p>
 						<img data-src="images/file-desktop.png" height="306" width="286" alt="桌面資料夾">
 					</section>
-					<section>
-						<h2>先動手準備下載</h2>
-						<ul>
-							<li>你的一張美照(myphoto.jpg)</li>
-							<li>你喜歡的背景圖片(mybg.jpg)</li>
-							<li>三張你想做的娛樂圖片<br>(myfun1.jpg、myfun2.jpg、myfun3.jpg)</li>
-							<li>把以上五張照片，放到資料夾:<br>beginner-webdesign-code/images中</li>
-						</ul>
-						<p>參考: <a href="http://www.sitebuilderreport.com/stock-up">stock-up免費圖庫</a></p>
-
-					</section>
 
 				</section>
 				<section>
@@ -277,7 +266,7 @@
 						表格
 						<a class="jsbin-embed" href="http://jsbin.com/jomaho/4/embed?html,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 					</section> -->
-<!-- 					<section>
+<!--  					<section>
 						<h2>
 							HTML5 語意化標籤 
 						</h2>
@@ -291,7 +280,13 @@
 							<li> footer : HTML5頁面的下方，用以顯示相關資訊</li>
 						</ul>
 						<p>// 無語意標籤 : div 、 span</p>
-					</section> -->
+					</section> 					 -->
+					<section>
+						<h2>
+							無語意標籤 div
+						</h2>
+						<p>搭配css做版面配置</p>
+					</section>
 				</section>
 
 
@@ -394,26 +389,31 @@
 				</section>
 				<section>
 					<section>
+						<h2>先動手下載</h2>
+						<ul>
+							<li>你的一張美照(myphoto.jpg)</li>
+							<li>你喜歡的背景圖片(mybg.jpg)</li>
+							<li>三張你想做事情情境圖<br>(myfun1.jpg、myfun2.jpg、myfun3.jpg)</li>
+							<li>把以上五張照片，放到資料夾:<br>beginner-webdesign-code/images中</li>
+						</ul>
+						<p>參考: <a href="http://www.sitebuilderreport.com/stock-up" target="_blank">stock-up免費圖庫</a></p>
+					</section>
+					<section>
 						<h1>實作前置</h1>
 					</section>
 					<section>
 						<h1>畫出想法</h1>
-						<img data-src="images/wireframe0.jpg" alt="wireframe">	
+						<img data-src="images/wish.jpg" alt="wireframe">	
 					</section>
 					<section>
 						<h1>標示HTML架構</h1>
-						<img data-src="images/wireframe.jpg" alt="wireframe">	
+						<img data-src="images/wish2.jpg" alt="wireframe">	
 					</section>	
 					<section>
 						<h1>搭建HTML骨架</h1>
 						<p>開啟03try.html檔案</p>
-						<img data-src="images/practice-structure.png" alt="wireframe">
+						
 					</section>	
-					<section>
-						<h1>穿上CSS</h1>
-						<p>開啟04complete.html檔案</p>
-						<img data-src="images/practice.png" height="400" alt="completeWebsite">	
-					</section>		
 					<section>
 						<h2>CSS Normalize</h2>
 						<ul>
@@ -425,18 +425,16 @@
 						<h2>寫入CSS樣式在try.css檔案</h2>
 
 						<ul>
-							<li>body中設定字型與背景圖片</li>
+							<li>background url背景圖片</li>
+							<li>background-size <a href="http://www.w3school.com.cn/tiy/c.asp?f=css_background-size&p=7">各種值</a></li>
 							<li>wrap中設定網頁內容寬度，並用margin置中</li>
+							<li>觀念解說 : 盒子模型 Box Model</li>
 						</ul>
 						<pre><code>
 body {
   font-family: "微軟正黑體";
-  background: url("http://i.imgur.com/KAuf8ir.jpg");
+  background: url("../images/mybg.jpg");
   background-size: cover;
-}
-
-h1 {
-  color: #fff;
 }
 
 .wrap {
@@ -444,81 +442,9 @@ h1 {
   margin: 0 auto;
 }
 						</code></pre>
-						<p>觀念解說(css_boxmodel.html): 盒子模型 Box Model</p>				
-					</section>
-					<section>
-						<h2>導覽列樣式</h2>
-
-						<ul>
-							<li>body中設定字型與背景圖片</li>
-							<li>wrap中設定網頁內容寬度，並用margin置中</li>
-						</ul>
-						<pre><code>
-.menu {
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 0;
-  background: rgba(109, 102, 86, 1);  
-  border-radius: 3px;  
-}
-
-.menu li {
-  display: inline-block;
-}
-
-.menu a {
-  font-size: 16px;
-  display: inline-block;
-  padding: 0 14px;
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background: rgba(91, 85, 69, 1); 
-}
-						</code></pre>
-						<p>觀念解說(css_display.html)</p>				
-					</section>
-					<section>
-						<h2>文章區樣式</h2>
-						<pre><code>
-.notes {
-  padding :20px;
-  background-color: #eee;
-  border-radius: 5px;
-  border :2px solid #ddd;
-}
-.notes img {
-  width: 300px;
-  /*float: left;*/
-}
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
-						</code></pre>
-						<p>觀念解說(css_float.html)</p>				
+						<p></p>				
 					</section>
 
-					<section>
-						<h2>頁尾樣式</h2>
-						<pre><code>
-footer {
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  color: #fff;
-}
-						</code></pre>			
-					</section>
-				</section>
-				<section>				
-					<section>
-						<h1>CSS觀念實作練習</h1>
-					</section>
 					<section>
 						<h2>Box Model盒子模型</h2>
 						<img data-src="images/boxmodel.jpg" alt="Box Model盒子模型">	
@@ -526,9 +452,70 @@ footer {
 						<ul>
 							<li>物件大小 ＝ content+padding+border</li>
 							<li>與隔壁的距離 ＝ margin</li>
+							<li>(css_boxmodel.html)</li>
 						</ul>
 						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/box-model.html">關於 Box Model</a> </p>
 					</section>	
+					<section>
+						<h2>header表頭樣式</h2>
+
+						<ul>
+							<li>font-size 字型大小(px)</li>
+							<li>text-align 讓字置中(左中右)</li>
+							<li>text-shadow 讓字加上陰影(x軸,y軸,模糊,色彩)</li>
+							<li>line-height 行高設定(%)</li>
+						</ul>
+						<pre><code>
+.header {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  text-shadow: 2px 2px 2px #333;
+}
+
+h1.title {
+  font-size: 40px;
+}
+
+p.info {
+  line-height: 150%;
+}
+
+						</code></pre>		
+					</section>
+					<section>
+						<h2>content內容樣式-1</h2>
+						<ul>
+							<li>background-color <br>給背景顏色(r,g,b,透明度)或(＃ffffff) <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">挑選色彩</a></li>
+							<li>border-radius 圓角弧度(px)</li>
+							<li>border 框線(色彩,寬度,<a href="http://www.1keydata.com/css-tutorial/tw/border.php">狀態</a>)</li>
+						</ul>
+						<pre><code>
+.content {
+  padding :20px;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 5px;
+  border : #eee 1px solid;
+}						</code></pre>				
+					</section>
+					<section>
+						<h2>content內容樣式-2</h2>
+						<ul>
+							<li>讓願望並排顯示</li>
+							<li>display 觀念解說(css_display.html)</li>
+						</ul>
+						<pre><code>
+.wishlist {
+  padding: 0;
+}
+.wishlist li {
+  display: inline-block;
+  width: 293px;
+  margin: 0 5px;
+  border-top: #000 3px solid;
+}					</code></pre>				
+					</section>
+
 					<section>
 						<h2>display</h2>
 						<p>每個 HTML 元素都有一個預設的 display 值</p>
@@ -541,16 +528,36 @@ footer {
 
 					</section>
 					<section>
-						<h2>float</h2>
+						<h2>content內容樣式-3</h2>
 						<ul>
-							<li>實作圖繞文效果</li>
-							<li>使用clear清除浮動</li>
-							<li>float排版</li>
+							<li>width: 100%; 修正圖片溢出</li>
 						</ul>
-						<p>//資源：學習 CSS 版面配置- <a href="http://zh-tw.learnlayout.com/float.html">關於 float 屬性</a> </p>
+						<pre><code>
+.wishlist img {
+  width: 100%;
+}
+.wishlist p {
+  padding-bottom: 5px;
+  border-bottom: #000 1px solid ;
+}
+						</code></pre>				
 					</section>
-									
-				</section>		
+					<section>
+						<h2>頁尾樣式</h2>
+						<pre><code>
+
+.footer {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+}
+						</code></pre>			
+					</section>		
+					<section>
+						<h2>動手做出你的style吧</h2>			
+					</section>
+				</section>	
 				<section>
 					<section>
 						<h2>如何繼續學習</h2>
